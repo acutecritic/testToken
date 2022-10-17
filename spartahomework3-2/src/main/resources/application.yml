@@ -1,0 +1,25 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/spartaWeek2HW;MODE=MySQL
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+
+logging:
+  level:
+    org.apache.coyote.http11: debug
+    org.hibernate.SQL: debug
+
+jwt:
+  secret: c3BhcnRhd2VlazJob21ld29ya2p3dGp3dGp3dHNlY3JldHNlY3JldGtleWtleXNwYXJ0YXdlZWsyaG9tZXdvcms=
+  #spartaweek2homeworkjwtjwtjwtsecretsecretkeykeyspartaweek2homework
